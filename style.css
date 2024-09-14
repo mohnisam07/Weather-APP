@@ -1,0 +1,178 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #00796b;
+}
+
+#search-input {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#city-input {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 70%;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #004d40;
+}
+
+#weather {
+    margin-top: 20px;
+}
+
+#weather img {
+    vertical-align: middle;
+}
+
+#weather p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#weather h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#weather p i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+
+:root {
+    --primary-color: #00796b;
+    --secondary-color: #004d40;
+    --background-color: #e0f7fa;
+    --card-background: white;
+    --text-color: #333;
+}
+
+body {
+    background: var(--background-color);
+}
+
+.container {
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+#submit-button {
+    background-color: var(--primary-color);
+}
+
+#submit-button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.container {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#submit-button {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#submit-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+    #city-input {
+        width: 100%;
+    }
+
+    #submit-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #weather {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-out;
+}
+
+
+#temp-icon {
+    margin-bottom: 10px;
+}
+
+
+
+.credit {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+    font-size: 12px; 
+    color: #888; 
+    
+}
+
+
+.credit p {
+    margin: 0;
+    padding-right: 665px;
+    
+}
